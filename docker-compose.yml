@@ -7,7 +7,7 @@ services:
     image: jellenberger/fastai-base
     shm_size: '2gb'  # see https://github.com/pytorch/pytorch/issues/2244; increase if necessary
     volumes:
-      - ./:/home/appuser/notebooks # working and notebook directory
+      - ./notebooks:/home/appuser/notebooks # working and notebook directory
       - ./data:/home/appuser/data # data directory
     ports:
       - 8888:8888
